@@ -51,7 +51,7 @@ GeoAPI.factory('GeoAPI', function($http, $q){
 					},
 					lastResult: {
 						status: data.status,
-						data: data
+						data: data.data
 					}
 				};
 
@@ -59,7 +59,7 @@ GeoAPI.factory('GeoAPI', function($http, $q){
 					deferred.reject(data);
 					console.log("Error: ", data);
 				}else{
-					deferred.resolve(data);
+					deferred.resolve(data.data);
 				}
 			});
 
