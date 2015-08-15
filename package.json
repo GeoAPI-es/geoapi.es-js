@@ -1,5 +1,5 @@
 {
-    "name": "geoapi.es/js",
+    "name": "@geoapi.es/js",
     "version": "0.0.1",
     "description": "Libreria en JS para GeoAPI.es",
     "keywords": [
