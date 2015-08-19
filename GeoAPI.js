@@ -4,7 +4,7 @@ GeoAPI.factory('GeoAPI', function($http, $q){
 	var self = this;
 
 	this.conf = {
-		url: 'http://geoapi.es/API/',
+		url: 'http://apiv1.geoapi.es/',
 		type: 'JSON',
 		key: '',
 		sandbox: 0
