@@ -1,7 +1,7 @@
 # geoapi.es-js
 Librería en JS para GeoAPI.es
 
-### Como empezar
+### Cómo empezar
 
 Es preferible leer la [documentación general](https://github.com/GeoAPI-es/geoapi.es-docs) a la par con esta documentación.
 
@@ -27,7 +27,7 @@ app.controller('MainCtrl', function($scope, $timeout, GeoAPI){ ...
 * Configuracion
 
     El método `setConfig` sirve para definir los parámetros que usará la librería para hacer las
-    peticiones. Dichos parámetros estan explicados en la [documentación general](https://github.com/GeoAPI-es/geoapi.es-docs).
+    peticiones. Dichos parámetros están explicados en la [documentación general](https://github.com/GeoAPI-es/geoapi.es-docs).
 
     ```javascript
     //
@@ -36,9 +36,9 @@ app.controller('MainCtrl', function($scope, $timeout, GeoAPI){ ...
     ...
     ```
 
-* Metodos
+* Métodos
 
-    La librería dispone de varios métodos, los cuales se usan para realizar las distintas peticiones. Cada uno de los métodos puede tener 0 o mas parámetros, que se usan para,
+    La librería dispone de varios métodos, los cuales se usan para realizar las distintas peticiones. Cada uno de los métodos puede tener 0 o más parámetros, que se usan para,
     por ejemplo, filtrar o concretar la busqueda. Los métodos reciben un unico argumento del
     tipo Object, que a su vez debe contener parejas de valores siendo:
 
@@ -56,12 +56,12 @@ app.controller('MainCtrl', function($scope, $timeout, GeoAPI){ ...
     ...
     ```
 
-    Todos los métodos disponibles, así como sus parámetros, estan especificados en la [documentación general](https://github.com/GeoAPI-es/geoapi.es-docs).
+    Todos los métodos disponibles, así como sus parámetros, están especificados en la [documentación general](https://github.com/GeoAPI-es/geoapi.es-docs).
 
-### Como funciona a nivel tecnico
+### Cómo funciona a nivel técnico
 
 La librería realiza peticiones `GET` al endpoint y ejecuta un callback (usando `$q` de Angular),
-pasandole como parámetros los datos recibidos. De esta manera se consigue un código asincrono.
+pasándole como parámetros los datos recibidos. De esta manera se consigue un código asíncrono.
 
 ```javascript
 GeoAPI.comunidades({
