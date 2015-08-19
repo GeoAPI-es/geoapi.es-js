@@ -1,23 +1,23 @@
 # geoapi.es-js
-Libreria en JS para GeoAPI.es
+Librería en JS para GeoAPI.es
 
 ### Como empezar
 
-Es preferible leer la [documentacion general](https://github.com/GeoAPI-es/geoapi.es-docs) a la par con esta documentacion.
+Es preferible leer la [documentación general](https://github.com/GeoAPI-es/geoapi.es-docs) a la par con esta documentación.
 
-La libreria esta disponible en [npm](https://npmjs.org/).
+La librería esta disponible en [npm](https://npmjs.org/).
 
 Para instalar <b>geoapi.es-js</b> y sus dependencias, es suficiente con añadir
 
     "@geoapi.es/js": "~0.0.1"
 
-en la seccion `dependencies` de tu archivo `package.json`.
+en la sección `dependencies` de tu archivo `package.json`.
 
 ### Como funciona a nivel funcional
 
-La libreria tiene 2 partes importantes.
+La librería tiene 2 partes importantes.
 
-De base usaremos el siguiente codigo para poder explicar mejor cada parte.
+De base usaremos el siguiente código para poder explicar mejor cada parte.
 
 ```javascript
 var app = angular.module('app', ['GeoAPI']);
@@ -26,8 +26,8 @@ app.controller('MainCtrl', function($scope, $timeout, GeoAPI){ ...
 
 * Configuracion
 
-    El metodo `setConfig` sirve para definir los parametros que usara la libreria para hacer las
-    peticiones. Dichos parametros estan explicados en la [documentacion general](https://github.com/GeoAPI-es/geoapi.es-docs).
+    El método `setConfig` sirve para definir los parámetros que usará la librería para hacer las
+    peticiones. Dichos parámetros estan explicados en la [documentación general](https://github.com/GeoAPI-es/geoapi.es-docs).
 
     ```javascript
     //
@@ -38,12 +38,12 @@ app.controller('MainCtrl', function($scope, $timeout, GeoAPI){ ...
 
 * Metodos
 
-    La libreria dispone de varios metodos, los cuales se usan para realizar las distintas peticiones. Cada uno de los metodos puede tener 0 o mas parametros, que se usan para,
-    por ejemplo, filtrar o concretar la busqueda. Los metodos reciben un unico argumento del
+    La librería dispone de varios métodos, los cuales se usan para realizar las distintas peticiones. Cada uno de los métodos puede tener 0 o mas parámetros, que se usan para,
+    por ejemplo, filtrar o concretar la busqueda. Los métodos reciben un unico argumento del
     tipo Object, que a su vez debe contener parejas de valores siendo:
 
-    * la clave - una cadena de texto especificando el parametro que se desea enviar
-    * el valor - o bien una cadena de texto o bien un numero que da valor al parametro
+    * la clave - una cadena de texto especificando el parámetro que se desea enviar
+    * el valor - o bien una cadena de texto o bien un número que da valor al parámetro
 
     Ejemplos:
 
@@ -56,12 +56,12 @@ app.controller('MainCtrl', function($scope, $timeout, GeoAPI){ ...
     ...
     ```
 
-    Todos los metodos disponibles, asi como sus parametros, estan especificados en la [documentacion general](https://github.com/GeoAPI-es/geoapi.es-docs).
+    Todos los métodos disponibles, así como sus parámetros, estan especificados en la [documentación general](https://github.com/GeoAPI-es/geoapi.es-docs).
 
 ### Como funciona a nivel tecnico
 
-La libreria realiza peticiones `GET` al endpoint y ejecuta un callback (usando `$q` de Angular),
-pasandole como parametros los datos recibidos. De esta manera se consigue un codigo asincrono.
+La librería realiza peticiones `GET` al endpoint y ejecuta un callback (usando `$q` de Angular),
+pasandole como parámetros los datos recibidos. De esta manera se consigue un código asincrono.
 
 ```javascript
 GeoAPI.comunidades({
