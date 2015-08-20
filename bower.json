@@ -1,0 +1,23 @@
+{
+  "name": "geoapi.es-js",
+  "version": "0.0.2",
+  "homepage": "https://github.com/GeoAPI-es/geoapi.es-js",
+  "authors": [
+    "Alexander Nestorov <alexandernst@gmail.com>"
+  ],
+  "description": "Libreria en JS para GeoAPI.es",
+  "main": "GeoAPI.js",
+  "keywords": [
+    "geoapi",
+    "españa",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
