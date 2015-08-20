@@ -5,13 +5,13 @@ Librería en JS para GeoAPI.es
 
 Es preferible leer la [documentación general](https://github.com/GeoAPI-es/geoapi.es-docs) a la par con esta documentación.
 
-La librería esta disponible en [npm](https://npmjs.org/).
+La librería esta disponible en [bower](https://bower.io/).
 
 Para instalar <b>geoapi.es-js</b> y sus dependencias, es suficiente con añadir
 
-    "@geoapi.es/js": "~0.0.1"
+    "geoapi.es-js": "~1.0.0"
 
-en la sección `dependencies` de tu archivo `package.json`.
+en la sección `dependencies` de tu archivo `bower.json`.
 
 ### Como funciona a nivel funcional
 
